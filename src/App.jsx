@@ -12,12 +12,13 @@ import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute'
 function App() {
 
   const  routes = createBrowserRouter([
-    {path:'/noteApp/',element:<Layout/>,children:[
+    {path:'/',element:<Layout/>,children:[
       {index : true, element :<ProtectedRoute><Home/></ProtectedRoute> },
-      {path:'/noteApp/login', element : <Login/>},
-      {path:'/noteApp/register', element : <Register/>},
+      {path:'login', element : <Login/>},
+      {path:'register', element : <Register/>},
       {path:'*', element : <NotFound/>},
 
+      
     ]}
   ])
 

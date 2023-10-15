@@ -39,7 +39,7 @@ export default function Login() {
     })
     localStorage.setItem('userNoteToken',data.token);
     setisLoading(false)
-    Navigate('/noteApp/')
+    Navigate('/')
   }  
   }
 

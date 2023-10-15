@@ -112,7 +112,7 @@ export default function Home() {
 
   function logout(){
     localStorage.removeItem('userNoteToken')
-    navigate('/noteApp/login')
+    navigate('/login')
     
   }
   useEffect(()=>{

@@ -38,7 +38,7 @@ export default function Register() {
       text: 'you are Registered Suceessfully',
     })
     setisLoading(false)
-    Navigate('/noteApp/login')
+    Navigate('/login')
   }  
   }
 
