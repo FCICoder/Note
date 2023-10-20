@@ -26,7 +26,7 @@ export default function Note({note , deletNote, getnotes}) {
   async function updateNote(values){
     console.log(values);
     setisLoading(true);
-    let {data} = await axios.put(`https:note-sigma-black.vercel.app/api/v1/notes/${note._id}`,values,{headers:{
+    let {data} = await axios.put(`https://note-sigma-black.vercel.app/api/v1/notes/${note._id}`,values,{headers:{
       token:`3b8ny__${localStorage.getItem('userNoteToken')}`
     }}).catch((err)=>{
       setError(err.response.data.msg)

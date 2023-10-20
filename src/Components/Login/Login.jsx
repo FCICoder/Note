@@ -17,7 +17,7 @@ export default function Login() {
     console.log(values);
     setisLoading(true);
     let {data}  = await axios.
-    post(`https:note-sigma-black.vercel.app/api/v1/users/signIn`,values)
+    post(`https://note-sigma-black.vercel.app/api/v1/users/signIn`,values)
    .catch((err)=>{
     setError(err.response.data.msg)
     setisLoading(false)
