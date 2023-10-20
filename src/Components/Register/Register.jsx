@@ -105,7 +105,7 @@ export default function Register() {
             color = '#e15b64'
           />
        </button>}
-       <Link  to='/noteApp/login'  className='btn btn-danger mx-4 text-white mt-2'> Login  </Link>
+       <Link  to='/login'  className='btn btn-danger mx-4 text-white mt-2'> Login  </Link>
     </form>
     </div>
     

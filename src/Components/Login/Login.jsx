@@ -63,7 +63,7 @@ export default function Login() {
   })
 
   return <>
-    <div className='w-75 mx-auto py-5'>
+    <div className='w-75 mx-auto py-5 vh-100'>
       {error ? <div className='alert alert-danger'>{error}</div>:""}
       <h3>Login Now</h3>
       <form onSubmit={formik.handleSubmit}>
