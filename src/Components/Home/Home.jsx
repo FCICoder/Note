@@ -21,7 +21,7 @@ export default function Home() {
 
   async function addNote(values){
     setisLoading(true);
-    let {data} = await axios.post(`https:note-sigma-black.vercel.app/api/v1/notes`,values,{headers:{
+    let {data} = await axios.post(`https://note-sigma-black.vercel.app/api/v1/notes`,values,{headers:{
       token:`3b8ny__${localStorage.getItem('userNoteToken')}`
     }})
     .catch((err)=>{
@@ -50,7 +50,7 @@ export default function Home() {
 
   async function getMyNotes(){
     setisLoading(true);
-    let { data } = await axios.get(`https:note-sigma-black.vercel.app/api/v1/notes`,{
+    let { data } = await axios.get(`https://note-sigma-black.vercel.app/api/v1/notes`,{
       headers:{
         token:`3b8ny__${localStorage.getItem('userNoteToken')}`
       }
@@ -74,7 +74,7 @@ export default function Home() {
   async function deletNote(noteId){
     setisLoading(true);
     
-    let {data} = await axios.delete(`https:note-sigma-black.vercel.app/api/v1/notes/${noteId}`,{
+    let {data} = await axios.delete(`https://note-sigma-black.vercel.app/api/v1/notes/${noteId}`,{
       headers:{
         token:`3b8ny__${localStorage.getItem('userNoteToken')}`
       }
